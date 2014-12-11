@@ -15,4 +15,5 @@
 //= require jquery.easing
 //= require jquery.scrollTo
 //= require turbolinks
+//= require main
 //= require_tree .
