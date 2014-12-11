@@ -10,8 +10,7 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require custom.css.scss
- *= require styles-4.css.scss
+ *= require_tree .
  *= require font-awesome
  *= require_self
  */
