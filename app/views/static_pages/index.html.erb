@@ -1,0 +1,133 @@
+<body data-spy="scroll">
+    
+    <!---//Facebook button code-->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    
+   
+    <!-- ******HEADER****** --> 
+    <header id="header" class="header">  
+        <div class="container">            
+            <h1 class="logo pull-left">
+                <a class="scrollto" href="#promo">
+                    <span class="logo-title">Radio Ginasio</span>
+                </a>
+            </h1><!--//logo-->              
+            <nav id="main-nav" class="main-nav navbar-right" role="navigation">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button><!--//nav-toggle-->
+                </div><!--//navbar-header-->            
+                <div class="navbar-collapse collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active nav-item sr-only"><a class="scrollto" href="#promo">Home</a></li>
+                        <li class="nav-item"><a class="scrollto" href="#features">Collection</a></li>
+                        <li class="nav-item"><a class="scrollto" href="#about">About</a></li>
+                    </ul><!--//nav-->
+                </div><!--//navabr-collapse-->
+            </nav><!--//main-nav-->
+        </div>
+    </header><!--//header-->
+    
+    <!-- ******PROMO****** -->
+    <section id="promo" class="promo section offset-header">
+        <div class="container text-center">
+            <h2 class="title">Radio<span class="highlight">Ginasio</span></h2>
+            <p class="intro">Live Portuguese music broadcasted from Ludlow, Massachusetts</p>
+            <div class="btns">
+                <a class="btn btn-cta-secondary" id="listenNowBtn">Listen Now</a>
+                
+            </div>
+
+            <div id="radioContainer" style="margin-top: 30px;">
+                <script type="text/javascript">var cstrpuid = 267187;var cstrpwidth = "800";var cstrpheight = "300";</script>
+                <script type="text/javascript" src="http://cdn.caster.fm/0070B7/widgets/player.js"></script>
+                <!--   DO NOT REMOVE THE LINKS BELOW, THEY  WILL BE HIDDEN (AND WILL HELP US A LOT)   -->
+                <a id="cstrplb" href="http://www.caster.fm/">Free Shoutcast Hosting</a><a id="cstrplb2" href="http://www.caster.fm/">Radio Stream Hosting</a>
+                <div id="cstrpdiv"></div>
+            </div>
+            <ul class="meta list-inline">
+                <li><a href="#" target="_blank">View on GitHub</a></li>
+                <li><a href="https://github.com/twbs/bootstrap" target="_blank">Full Documentation</a></li>
+                <li>Created by: <a href="http://themes.3rdwavemedia.com/" target="_blank">Xiaoying Riley</a> at 3rd Wave Media</li>
+            </ul><!--//meta-->
+        </div><!--//container-->
+    </section><!--//promo-->
+    
+    
+    
+    <!-- ******FEATURES****** --> 
+    <section id="features" class="features section">
+        <div class="container text-center">
+            <h2 class="title">Music Collection</h2>
+            <ul class="feature-list list-unstyled">
+                <li><i class="fa fa-music"></i> Coming Soon</li>
+                
+            </ul>
+        </div><!--//container-->
+    </section><!--//features-->
+    
+    
+
+    <!-- ******ABOUT****** --> 
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="title text-center">Abour Radio Ginasio</h2>
+            <p class="intro text-center">Portuguese radio at its finest.</p>
+            <div class="row">
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="icon-holder">
+                        <i class="fa fa-futbol-o"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">Jeff Francisco</h3>
+                        <p><%= image_tag("jeff.jpg", size: "200x200") %></p>
+                    </div><!--//content-->
+                </div><!--//item-->
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="icon-holder">
+                        <i class="fa fa-thumbs-o-up"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">Jenna Marini</h3>
+                        <p><%= image_tag("jenna.jpg", size: "200x200") %></p>
+                    </div><!--//content-->
+                </div><!--//item-->
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="icon-holder">
+                        <i class="fa fa-heart"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">Dynamic Duo </h3>
+                        <p><%= image_tag("together.jpg", size: "200x200") %></p>
+                    </div><!--//content-->
+                </div><!--//item-->           
+                <div class="clearfix visible-md"></div>    
+                           
+            </div><!--//row-->            
+        </div><!--//container-->
+    </section><!--//about-->
+    
+    
+    
+      
+    <!-- ******FOOTER****** --> 
+    <footer class="footer">
+        <div class="container text-center">
+            <!-- <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small> -->
+        </div><!--//container-->
+    </footer><!--//footer-->  
+</body>
+</html> 
+
+
