@@ -15,5 +15,6 @@
 //= require jquery.easing
 //= require jquery.scrollTo
 //= require turbolinks
+//= require bootstrap
 //= require main
 //= require_tree .

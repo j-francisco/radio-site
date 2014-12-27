@@ -1,7 +1,7 @@
 jQuery(document).ready(function($) {
 
     /* ======= Scrollspy ======= */
-    // $('body').scrollspy({ target: '#header', offset: 400});
+    $('body').scrollspy({ target: '#header', offset: 400});
     
     /* ======= Fixed header when scrolled ======= */
     

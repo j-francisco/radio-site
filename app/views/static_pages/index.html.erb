@@ -9,7 +9,6 @@
       js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
-    
    
     <!-- ******HEADER****** --> 
     <header id="header" class="header">  
@@ -23,7 +22,7 @@
                 <div class="navbar-header">
                     <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
                         <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"><a class="scrollto" href="#about">Contact</a></span>
+                        <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button><!--//nav-toggle-->
@@ -31,7 +30,7 @@
                 <div class="navbar-collapse collapse" id="navbar-collapse">
                     <ul class="nav navbar-nav">
                         <li class="active nav-item sr-only"><a class="scrollto" href="#promo">Home</a></li>
-                        <!-- <li class="nav-item"><a class="scrollto" href="#features">Collection</a></li> -->
+                        <li class="nav-item"><a class="scrollto" href="#comments">Comments</a></li>
                         <li class="nav-item"><a class="scrollto" href="#about">Contact</a></li>
                     </ul><!--//nav-->
                 </div><!--//navabr-collapse-->
@@ -40,38 +39,54 @@
     </header><!--//header-->
     
     <!-- ******PROMO****** -->
-    <section id="promo" class="promo section offset-header">
+    <section id="promo" class="promo section offset-header top-section">
         <div class="container text-center">
-            <h2 class="title">Radio<span class="highlight">Portusa</span></h2>
+            <div class="row">
+                <div class="item col-md-2 col-sm-12 col-xs-12">
+                   <%= image_tag("usa_flag.png", size: "150x150") %>
+                </div>
+                <div class="item col-md-8 col-sm-12 col-xs-12">
+                   <h2 class="title">Radio<span class="highlight">Portusa</span></h2>
+                </div>
+                <div class="item col-md-2 col-sm-12 col-xs-12">
+                    <%= image_tag("portugal_flag.png", size: "150x150") %>
+                </div>
+            </div>
+
+            
             <p class="intro">Live Portuguese music broadcasted from Ludlow, Massachusetts</p>
-           <!--  <div class="btns">
-                <a class="btn btn-cta-secondary" id="listenNowBtn" onclick="window.open('http://mobile.caster.fm/380EC4/','web-radio','width=800,height=360,left=0,top=0,resizable=no,scrollbars=no,toolbar=no,menubar=no,location=no,directories=no,status=no,toolbar=no'); return false;">Listen Now</a>
-                
-            </div> -->
-            <iframe src="http://mobile.Caster.fm/A0A7E9" border="0" style="border:0;" width="800" height="360"></iframe>
+           
+            <!-- <iframe src="http://mobile.Caster.fm/A0A7E9" border="0" style="border:0;" width="800" height="360"></iframe> -->
+
+            <iframe src="http://mobile.Caster.fm/A0A7E9" border="0" style="border:0;" width="404" height="338"></iframe>
+
             <div><a href="http://ginasio.caster.fm">Click here if the stream doesn't work</a></div>
-            <script type="text/javascript">var cstruid = 271443;var cstrdark = "FALSE";</script>
-            <script type="text/javascript" src="http://cdn.caster.fm/0070B7/widgets/status.js"></script>
-            <!--   DO NOT REMOVE THE LINKS BELOW, THEY  WILL BE HIDDEN (AND WILL HELP US A LOT)   -->
-            <a id="cstrlb" href="http://www.caster.fm/">Free Shoutcast Hosting</a><a id="cstrlb2" href="http://www.caster.fm/">Radio Stream Hosting</a>
-            <div id="cstrdiv"></div>
         </div>
     </section>
     
-    
-    
-    <!-- ******FEATURES****** --> 
-    <!-- <section id="features" class="features section">
-        <div class="container text-center">
-            <h2 class="title">Music Collection</h2>
-            <ul class="feature-list list-unstyled">
-                <li><i class="fa fa-music"></i> Coming Soon</li>
-                
-            </ul>
+
+    <section id="comments" class="promo section">
+        <div class="container">
+            <div class="row">
+                <div class="item col-md-8 col-sm-12 col-xs-12 fb-comments text-center">
+                    <div class="content">
+                        <div class="fb-comments" data-href="http://www.radioportusa.com" data-numposts="5" data-colorscheme="light"></div>
+                    </div>
+                </div>
+                <div class="item col-md-4 col-sm-12 col-xs-12">
+                    <div class="content text-center">
+                        <script type="text/javascript">var cstruid = 271443;var cstrdark = "FALSE";</script>
+                        <script type="text/javascript" src="http://cdn.caster.fm/0070B7/widgets/status.js"></script>
+                        <!--   DO NOT REMOVE THE LINKS BELOW, THEY  WILL BE HIDDEN (AND WILL HELP US A LOT)   -->
+                        <a id="cstrlb" href="http://www.caster.fm/">Free Shoutcast Hosting</a><a id="cstrlb2" href="http://www.caster.fm/">Radio Stream Hosting</a>
+                        <div id="cstrdiv"></div>
+                    </div>
+                </div>
+            </div>
+            
         </div>
-    </section> -->
-    
-    
+    </section>
+      
 
     <!-- ******ABOUT****** --> 
     <section id="about" class="about section">
@@ -79,49 +94,9 @@
             <h2 class="title text-center">Contact</h2>
             <p class="intro text-center">Tony Francisco</p>
             <p class="intro text-center">evora55@hotmail.com</p>
-            <!-- <div class="row">
-                <div class="item col-md-4 col-sm-6 col-xs-12">
-                    <div class="icon-holder">
-                        <i class="fa fa-futbol-o"></i>
-                    </div>
-                    <div class="content">
-                        <h3 class="sub-title">Jeff Francisco</h3>
-                        <p><%= image_tag("jeff.jpg", size: "200x200") %></p>
-                    </div>
-                </div>
-                <div class="item col-md-4 col-sm-6 col-xs-12">
-                    <div class="icon-holder">
-                        <i class="fa fa-thumbs-o-up"></i>
-                    </div>
-                    <div class="content">
-                        <h3 class="sub-title">Jenna Marini</h3>
-                        <p><%= image_tag("jenna.jpg", size: "200x200") %></p>
-                    </div>
-                </div>
-                <div class="item col-md-4 col-sm-6 col-xs-12">
-                    <div class="icon-holder">
-                        <i class="fa fa-heart"></i>
-                    </div>
-                    <div class="content">
-                        <h3 class="sub-title">Dynamic Duo </h3>
-                        <p><%= image_tag("together.jpg", size: "200x200") %></p>
-                    </div>
-                </div>          
-                <div class="clearfix visible-md"></div>    
-                           
-            </div>       -->
         </div>
     </section> 
     
-    
-    
-      
-    <!-- ******FOOTER****** --> 
-    <!-- <footer class="footer"> -->
-        <!-- <div class="container text-center"> -->
-            <!-- <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small> -->
-        <!-- </div> -->
-    <!-- </footer> -->
 </body>
 </html> 
 
